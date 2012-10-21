@@ -43,8 +43,8 @@ group :test do
 	gem 'database_cleaner' , '0.7.0'
 
 # mac os x
-	gem 'rb-fsevent', '0.4.3.1', :require => false
-	gem 'growl', '1.0.3'
+	gem 'rb-fsevent'
+	gem 'growl'
 
 # linux
 #	gem 'rb-inotify', '0.8.8'
