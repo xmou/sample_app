@@ -41,10 +41,21 @@ group :test do
 	gem 'factory_girl_rails', '1.4.0'
 	gem 'cucumber-rails' , '1.2.1', require: false
 	gem 'database_cleaner' , '0.7.0'
-	gem 'rb-fchange', '0.0.5'
-	gem 'rb-notifu', '0.0.4'
-	gem 'win32console', '1.3.0'
-	gem 'wdm', '~> 0.0.3'
+
+# mac os x
+	gem 'rb-fsevent', '0.4.3.1', require: false
+	gem 'growl', '1.0.3'
+
+# linux
+	gem 'rb-inotify', '0.8.8'
+	gem 'libnotify', '0.5.9'
+
+# windows
+#	gem 'rb-fchange', '0.0.5'
+#	gem 'rb-notifu', '0.0.4'
+#	gem 'win32console', '1.3.0'
+#	gem 'wdm', '~> 0.0.3'
+
 end
 
 group :production do
