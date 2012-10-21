@@ -47,8 +47,8 @@ group :test do
 	gem 'growl', '1.0.3'
 
 # linux
-	gem 'rb-inotify', '0.8.8'
-	gem 'libnotify', '0.5.9'
+#	gem 'rb-inotify', '0.8.8'
+#	gem 'libnotify', '0.5.9'
 
 # windows
 #	gem 'rb-fchange', '0.0.5'
