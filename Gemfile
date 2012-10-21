@@ -39,11 +39,11 @@ end
 group :test do
 	gem 'capybara' , '1.1.2'
 	gem 'factory_girl_rails', '1.4.0'
-	gem 'cucumber-rails' , '1.2.1', require: false
+	gem 'cucumber-rails' , '1.2.1', :require => false
 	gem 'database_cleaner' , '0.7.0'
 
 # mac os x
-	gem 'rb-fsevent', '0.4.3.1', require: false
+	gem 'rb-fsevent', '0.4.3.1', :require => false
 	gem 'growl', '1.0.3'
 
 # linux
