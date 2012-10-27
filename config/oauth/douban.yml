@@ -1,0 +1,8 @@
+development:
+  key:    "0a22938ce805de3d1e67baa6b8119ab7"
+  secret: "ed996a48d4a387c9"
+  url:    "http://localhost:3000/"
+production:
+  key:    "0a22938ce805de3d1e67baa6b8119ab7"
+  secret: "ed996a48d4a387c9"
+  url:    "http://localhost:3000/"

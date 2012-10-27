@@ -1,0 +1,10 @@
+development:
+	key:    "2598091868"
+	secret: "589eca3ee1f9792ff05646cfcd1845c2"
+	url:    "http://localhost:3000"
+	callback: "http://localhost:3000"
+production:
+	key:    "2598091868"
+	secret: "589eca3ee1f9792ff05646cfcd1845c2"
+	url:    "http://glacial-springs-3898.herokuapp.com"
+	callback: "http://glacial-springs-3898.herokuapp.com"
