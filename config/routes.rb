@@ -1,9 +1,4 @@
 SampleApp::Application.routes.draw do
-
-  #match "syncs/:type/new" => "syncs#new", :as => :sync_new
-  
-  #match "syncs/:type/callback" => "syncs#callback", :as => :sync_callback
-
   root to: 'static_pages#home'
 
   match '/signup', to: 'users#new'
