@@ -23,10 +23,10 @@ class User < ActiveRecord::Base
 	validates :password, presence: true, length: { minimum: 6 }
 	validates :password_confirmation, presence: true
 	validates :country, presence: true
-	validates :citry, presence: true
+	validates :city, presence: true
 	validates :street, presence: true
 
-	def address
+	def gmaps4rails_address
 		"#{self.street}, #{self.city}, #{self.country}"
 	end
 

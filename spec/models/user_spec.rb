@@ -33,7 +33,7 @@ describe User do
 
 	describe "with admin attribute set to 'true'" do 
 		before { @user.toggle!(:admin) }
-		it { should be_admin }
+		it { should be_πadmin }
 	end
 
 	describe "when name is not present" do
