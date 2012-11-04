@@ -22,8 +22,11 @@ class User < ActiveRecord::Base
 	validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
 	validates :password, presence: true, length: { minimum: 6 }
 	validates :password_confirmation, presence: true
+	validates :country, presence: true
+	validates :citry, presence: true
+	validates :street, presence: true
 
-	def gmaps4rails_address
+	def address
 		"#{self.street}, #{self.city}, #{self.country}"
 	end
 
