@@ -10,8 +10,9 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :email, :name, :password, :password_confirmation
+  attr_accessible :email, :name, :password, :password_confirmation, :country, :city, :street
   has_secure_password
+  acts_as_gmappable
 
   before_save { |user| user.email = email.downcase }
   before_save :create_remember_token
@@ -21,6 +22,10 @@ class User < ActiveRecord::Base
 	validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
 	validates :password, presence: true, length: { minimum: 6 }
 	validates :password_confirmation, presence: true
+
+	def gmaps4rails_address
+		"#{self.street}, #{self.city}, #{self.country}"
+	end
 
 	private
 	def create_remember_token
