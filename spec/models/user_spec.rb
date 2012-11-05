@@ -14,7 +14,7 @@ require 'spec_helper'
 describe User do
   
   before do
-  	@user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+  	@user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar", country: "China", city: "Chengdu", street: "Ork street")
   end
 
   subject { @user }
@@ -33,7 +33,7 @@ describe User do
 
 	describe "with admin attribute set to 'true'" do 
 		before { @user.toggle!(:admin) }
-		it { should be_πadmin }
+		it { should be_admin }
 	end
 
 	describe "when name is not present" do
